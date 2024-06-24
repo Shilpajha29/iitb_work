@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality Process Digitalization</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Digitalize Hospitality Process</h1>
+        <form id="upload-form" class="mt-4">
+            <div class="mb-3">
+                <label for="group-csv" class="form-label">Upload Group Information CSV</label>
+                <input type="file" class="form-control" id="group-csv" accept=".csv" required>
+            </div>
+            <div class="mb-3">
+                <label for="hostel-csv" class="form-label">Upload Hostel Information CSV</label>
+                <input type="file" class="form-control" id="hostel-csv" accept=".csv" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Allocate Rooms</button>
+        </form>
+        <div id="results" class="mt-5"></div>
+        <button id="download-btn" class="btn btn-success mt-3" style="display:none;">Download Allocation CSV</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
